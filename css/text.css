@@ -1,0 +1,24 @@
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+.two span {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: brown;
+}
+.three{
+    position: relative;
+    float: left;
+}
+  .three ul{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: blueviolet;
+    list-style: none;
+}
+
