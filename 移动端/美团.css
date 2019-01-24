@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none
+}
+body{
+    font-size: .28rem;
+    font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: rgb(148, 144, 144);
+}
+.header{
+    display: flex;
+    background: rgb(6,193,174);
+    
+}
+.area{
+    width: 1.6rem;
+    height: 1.01rem;
+    line-height: 1.01rem;
+    font-size: .35rem;
+    margin-left: 0.2rem;
+}
+.area a span{
+    color: aliceblue;
+}
+.my{
+    width: .48rem;
+    height: 1.01rem;
+    line-height: 1.01rem;
+    color: aliceblue;
+    margin-right: 0.2rem
+}
+.search{
+    flex: 1;
+    margin-top: 0.2rem;
+}
+.search input{
+    height: 0.5rem;
+    background: #68dbce;
+    border: 0.05rem solid #cccccc;
+    border-radius: 0.1rem;
+}
+
+.download img{
+    width: 100%;
+}
+
+
+.list{
+    background: white;
+    overflow: hidden;
+    border: 0.05rem solid white;
+}
+.list ul li .circle{
+    display: block;
+    background: rgb(114, 180, 192);
+    width: 0.8rem; 
+    height: 0.8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.list li{
+    padding-top:0.2rem;
+    float: left;
+    width:20%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

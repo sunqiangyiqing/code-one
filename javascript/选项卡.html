@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            /* 解决塌陷问题 */
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            width: 80px;
+            height: 30px;
+            background: #ff0036;
+            margin-right:3px;
+            cursor: pointer;
+        }
+        li.selected{
+            background: greenyellow;
+        }
+        .content div{
+            width: 269px;
+            height: 180px;
+            background: #cccccc;
+            display: none;
+        }
+        .content div.active{
+            display: block;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="btn-box">
+            <li class="selected">实时</li>
+            <li>体育</li>
+            <li>娱乐</li>
+        </ul>
+        <div class="content">
+            <div class="active">啦啦啦</div>
+            <div>嘿嘿额</div>
+            <div>哈哈哈</div>
+        </div>
+    </div>
+   <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('.btn-box li').on('click',function(){
+            $(this).addClass('selected').siblings().removeClass('selected');
+            $('.content div').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
